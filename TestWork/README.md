@@ -34,3 +34,25 @@
 #### Блок-схема логики работы метода TransformArray:
 
 ![Блок схема](testWork.png)
+
+#### код метода TransformArray:
+
+```c#
+string[] TransformArray(string[] arrayOne)
+{
+    int length = 0;
+    int count = 0;
+    for (int i = 0; i < arrayOne.Length; i++)
+        if (arrayOne[i].Length <= 3) length++;
+    string[] arrayTwo = new string[length];
+    for (int i = 0; i < arrayOne.Length; i++)
+    {
+        if (arrayOne[i].Length <= 3)
+        {
+            arrayTwo[count] = arrayOne[i];
+            count++;
+        }
+    }
+    return arrayTwo;
+}
+
