@@ -58,7 +58,20 @@ string[] TransformArray(string[] arrayOne)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 #### код программы на C#:
+
 string InputInt(string message)
 {
     Console.Write(message);
